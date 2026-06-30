@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atemtechnik – Case Study</title>
+
+    <link rel="stylesheet" href="./styles/atmung.css">
+    <script src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div><strong>Portfolio</strong></div>
+
+            <div>
+                <a href="index.html">Start</a>
+                <a href="training.html">Training</a>
+                <a href="wettkampf-analyse.html">Wettkampf</a>
+                <a href="koerperhaltung.html">Körperhaltung</a>
+                <a href="ausruestung.html">Ausrüstung</a>
+                <a href="schiesstechnik.html">Technik</a>
+                <a href="treffen.html">Treffer</a>
+                <a href="fokus-training.html">Fokus</a>
+                <a href="atmung.html" class="active">Atmung</a>
+                <a href="abzug_haltung.html">Abzug & Waffenhaltung</a>
+                <a href="verein.html">Verein</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div>
+                <h1>Atemtechnik</h1>
+                <p>Case Study: Kontrolle der Atmung zur Verbesserung der Schusspräzision</p>
+            </div>
+
+        </section>
+
+        <!-- DASHBOARD -->
+
+        <section>
+
+            <h2>Trainingsübersicht</h2>
+
+            <div class="grid cards">
+
+                <div class="card">
+                    <h3>🫁 Atemkontrolle</h3>
+                    <p>92 % konstante Atemroutine</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎯 Präzision</h3>
+                    <p>Trefferbild deutlich verbessert</p>
+                </div>
+
+                <div class="card">
+                    <h3>🧘 Ruhepuls</h3>
+                    <p>Reduzierung vor jedem Schuss</p>
+                </div>
+
+                <div class="card">
+                    <h3>📈 Fortschritt</h3>
+                    <p>Stabile Leistung über mehrere Trainingseinheiten</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TABS -->
+
+        <section>
+
+            <div class="tabs">
+
+                <div class="tab-buttons">
+
+                    <button class="tab-btn active" onclick="openTab('overview', event)">Übersicht</button>
+
+                    <button class="tab-btn" onclick="openTab('analysis', event)">Analyse</button>
+
+                    <button class="tab-btn" onclick="openTab('execution', event)">Training</button>
+
+                    <button class="tab-btn" onclick="openTab('result', event)">Ergebnis</button>
+
+                </div>
+
+                <!-- ÜBERSICHT -->
+
+                <div id="overview" class="tab-content active">
+
+                    <h2>Projektübersicht</h2>
+
+                    <p>
+
+                        Die Atmung ist einer der wichtigsten Faktoren im Sportschießen.
+                        Eine ruhige und gleichmäßige Atmung reduziert Körperbewegungen und
+                        ermöglicht einen kontrollierten Schuss im optimalen Atemfenster.
+
+                    </p>
+
+                    <img src="bilder/atmung.jpg" alt="Atemtechnik">
+
+                </div>
+
+                <!-- ANALYSE -->
+
+                <div id="analysis" class="tab-content">
+
+                    <h2>Analyse</h2>
+
+                    <div class="grid two">
+
+                        <div>
+
+                            <h3>Beobachtungen</h3>
+
+                            <ul>
+
+                                <li>Unruhige Atmung führte zu größeren Streukreisen.</li>
+
+                                <li>Bewusstes Ausatmen vor dem Schuss erhöhte die Stabilität.</li>
+
+                                <li>Der Puls beeinflusste die Zielruhe deutlich.</li>
+
+                                <li>Regelmäßiges Atemtraining verbesserte die Konzentration.</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Interpretation</h3>
+
+                            <p>
+
+                                Durch eine kontrollierte Atemtechnik konnte die Bewegung des Körpers
+                                vor dem Schuss reduziert werden. Dadurch blieb das Visier ruhiger,
+                                wodurch die Präzision sichtbar zunahm.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- TRAINING -->
+
+                <div id="execution" class="tab-content">
+
+                    <h2>Trainingsmaßnahmen</h2>
+
+                    <div class="grid cards">
+
+                        <div class="card">
+
+                            <h3>🫁 Atemrhythmus</h3>
+
+                            <p>Einüben eines gleichmäßigen Atemablaufs.</p>
+
+                        </div>
+
+                        <div class="card">
+
+                            <h3>🎯 Schussfenster</h3>
+
+                            <p>Schussabgabe während der natürlichen Atempause.</p>
+
+                        </div>
+
+                        <div class="card">
+
+                            <h3>🧘 Entspannung</h3>
+
+                            <p>Lockerungsübungen vor jeder Trainingseinheit.</p>
+
+                        </div>
+
+                        <div class="card">
+
+                            <h3>📊 Kontrolle</h3>
+
+                            <p>Dokumentation der Trefferbilder zur Erfolgskontrolle.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ERGEBNIS -->
+
+                <div id="result" class="tab-content">
+
+                    <h2>Ergebnis</h2>
+
+                    <p>
+
+                        Durch regelmäßiges Atemtraining konnte die Zielruhe verbessert
+                        werden. Die Trefferbilder wurden enger und die Schussabgabe
+                        erfolgte deutlich kontrollierter.
+
+                    </p>
+
+                    <h3>Fazit</h3>
+
+                    <p>
+
+                        Die Atemtechnik bildet die Grundlage für präzises Sportschießen.
+                        Eine ruhige Atmung verbessert nicht nur die Schussgenauigkeit,
+                        sondern unterstützt auch Konzentration und mentale Stabilität.
+
+                    </p>
+
+                    <a class="btn" href="index.html#projects">
+
+                        ← Zurück zu den Projekten
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        © 2026 Portfolio Sportschütze
+
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>

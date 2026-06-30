@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Sportschütze</title>
+
+  <link rel="stylesheet" href="./styles/style1.css">
+
+  <!-- EINZIGE Script-Einbindung (WICHTIG) -->
+  <script src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div><strong>Portfolio</strong></div>
+      <div>
+        <a href="index.html" class="active">Start</a>
+        <a href="training.html">Training</a>
+        <a href="wettkampf-analyse.html">Wettkampf</a>
+        <a href="koerperhaltung.html">Körperhaltung</a>
+        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="schiesstechnik.html">Technik</a>
+        <a href="treffen.html">Treffer</a>
+        <a href="fokus-training.html">Fokus</a>
+        <a href="atmung.html">Atmung</a>
+        <a href="abzug_haltung.html">Abzug & Waffenhaltung</a>
+        <a href="verein.html">Verein</a>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div>
+        <h1>Präzision. Konzentration. Leidenschaft.</h1>
+        <p>Ein digitales Portfolio über Sportschießen, Technik und persönliche Entwicklung.</p>
+        <a class="btn" href="./index.html#projects">Zu den Projekten</a>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>Neueste Projekte</h2>
+
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Wettkampf 2026</h3>
+          <p>Analyse und Verbesserung meiner Technik im letzten Wettbewerb.</p>
+        </article>
+
+        <article class="card">
+          <h3>Training Setup</h3>
+          <p>Optimierung meines Trainings- und Konzentrationssystems.</p>
+        </article>
+
+        <article class="card">
+          <h3>Mentales Training</h3>
+          <p>Fokus auf mentale Stärke und Stresskontrolle.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="categories">
+      <h2>Kategorien</h2>
+
+      <div class="grid cards">
+        <div class="card">Training</div>
+        <div class="card">Wettkampf</div>
+        <div class="card">Technik</div>
+        <div class="card">Mental</div>
+        <div class="card">Ausrüstung</div>
+        <div class="card">Atmung</div>
+        <div class="card">Körperhaltung</div>
+        <div class="card">Trefferanalyse</div>
+        <div class="card">Abzug & Waffenhaltung</div>
+        <div class="card">Vereinsarbeit</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projektübersicht</h2>
+
+      <!-- FILTER -->
+      <div class="filter">
+        <label for="categoryFilter">Kategorie:</label>
+
+        <select id="categoryFilter">
+          <option value="all">Alle</option>
+          <option value="training">Training</option>
+          <option value="wettkampf">Wettkampf</option>
+          <option value="technik">Technik</option>
+          <option value="mental">Mental</option>
+          <option value="ausrüstung">Ausrüstung</option>
+          <option value="atmung">Atemtechnik</option>
+          <option value="koerperhaltung">Körperhaltung</option>
+          <option value="treffen">Trefferanalyse</option>
+          <option value="abzug_haltung">Abzug & Waffenhaltung</option>
+          <option value="verein">Vereinsarbeit</option>
+        </select>
+      </div>
+
+      <!-- PROJEKTE -->
+      <div class="grid cards">
+
+        <article class="card project training">
+          <h3>Trainingsroutine</h3>
+          <p>Optimierung der täglichen Abläufe.</p>
+          <a href="training.html">Details</a>
+        </article>
+
+        <article class="card project wettkampf">
+          <h3>Wettkampf Analyse</h3>
+          <p>Auswertung eines offiziellen Turniers.</p>
+          <a href="wettkampf-analyse.html">Details</a>
+        </article>
+
+        <article class="card project technik">
+          <h3>Schießtechnik</h3>
+          <p>Verbesserung der Präzision.</p>
+          <a href="schiesstechnik.html">Details</a>
+        </article>
+
+        <article class="card project mental">
+          <h3>Fokus Training</h3>
+          <p>Mentale Stabilität unter Druck.</p>
+          <a href="fokus-training.html">Details</a>
+        </article>
+
+        <article class="card project ausrüstung">
+          <h3>Ausrüstungscheck</h3>
+          <p>Überprüfung und Optimierung der Ausrüstung.</p>
+          <a href="ausruestung.html">Details</a>
+        </article>
+
+        <article class="card project atmung">
+          <h3>Kontrolle der Atmung</h3>
+          <p>Analyse und Verbesserung der Atemtechnik.</p>
+          <a href="atmung.html">Details</a>
+        </article>
+
+        <article class="card project koerperhaltung">
+          <h3>Körperhaltung</h3>
+          <p>Optimierung der Körperhaltung für bessere Stabilität und Präzision.</p>
+          <a href="koerperhaltung.html">Details</a>
+        </article>
+
+        <article class="card project treffen">
+          <h3>Trefferanalyse</h3>
+          <p>Analyse der Trefferbilder und Streuung.</p>
+          <a href="treffen.html">Details</a>
+        </article>
+
+        <article class="card project abzug_haltung">
+          <h3>Abzugshaltung</h3>
+          <p>Optimierung der Abzugshaltung für bessere Präzision.</p>
+          <a href="Abzug_haltung.html">Details</a>
+        </article>
+
+        <article class="card project verein">
+          <h3>Vereinsarbeit</h3>
+          <p>Organisation und Durchführung von Vereinsaktivitäten.</p>
+          <a href="Verein.html">Details</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="project-detail">
+      <h2>Projekt Details</h2>
+
+      <div class="grid two">
+
+        <div>
+          <img src="bilder/schiessen_blz.jpeg" alt="Projekt Bild">
+        </div>
+
+        <div>
+          <h3>Wettkampf Analyse 2026</h3>
+          <p>Detaillierte Analyse meiner Leistung, inklusive Technik, Fehlerkorrektur und Verbesserungsstrategie.</p>
+
+          <h4>Beratung anfragen</h4>
+
+          <form>
+            <input placeholder="Name">
+            <input type="email" placeholder="E-Mail">
+
+            <select>
+              <option>Beratung wählen</option>
+              <option>Technik Analyse</option>
+              <option>Training Plan</option>
+              <option>Mental Coaching</option>
+            </select>
+
+            <textarea rows="4" placeholder="Nachricht"></textarea>
+            <button>Senden</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Über mich & KI Einsatz</h2>
+
+      <div class="grid two">
+
+        <div>
+          <img src="bilder/IMG_2993.jpeg" alt="Porträt">
+        </div>
+
+        <div>
+          <p>
+            Dieses Portfolio wurde mit Unterstützung von KI-Tools entwickelt.
+          </p>
+
+          <h3>Genutzte KI-Tools</h3>
+          <ul>
+            <li><strong>ChatGPT</strong> – Codegenerierung</li>
+            <li><strong>GitHub Copilot</strong> – Code Vorschläge</li>
+          </ul>
+
+          <h3>Vergleich</h3>
+          <p>ChatGPT für Struktur, Copilot für schnelle Hilfe im Code.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontakt</h2>
+
+      <div class="grid two">
+
+        <form>
+          <input placeholder="Name">
+          <input type="email" placeholder="E-Mail">
+
+          <select>
+            <option>Betreff auswählen</option>
+            <option>Allgemeine Anfrage</option>
+            <option>Projektanfrage</option>
+            <option>Zusammenarbeit</option>
+          </select>
+
+          <textarea rows="5" placeholder="Nachricht"></textarea>
+          <button>Senden</button>
+        </form>
+
+        <div class="card">
+          <h3>Team / Info</h3>
+          <p>Einzelprojekt – Sportschützen Portfolio</p>
+          <p>E-Mail: kontakt@example.com</p>
+          <p>Standort: Schweiz</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <h2>Newsletter</h2>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="E-Mail Adresse">
+        <button>Abonnieren</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Portfolio Sportschütze
+  </footer>
+
+</body>
+
+</html>

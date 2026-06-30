@@ -1,0 +1,716 @@
+/* ===============================
+   RESET + BASE
+=============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1220;
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding-top: 70px;
+}
+
+/* ===============================
+   ULTRA PREMIUM NAVBAR (UNIFIED STYLE)
+=============================== */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(11, 18, 32, 0.65);
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  padding: 6px 0;
+  background: rgba(11, 18, 32, 0.8);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 28px;
+}
+
+/* LOGO */
+nav strong {
+  font-size: 1.25rem;
+  letter-spacing: 0.6px;
+
+  color: #ffffff;
+
+  position: relative;
+}
+
+/* underline glow */
+nav strong::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+
+  width: 40%;
+  height: 2px;
+
+  background: linear-gradient(90deg, #3b82f6, transparent);
+  border-radius: 10px;
+}
+
+/* LINKS CONTAINER */
+nav div:last-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* LINKS STYLE */
+nav a {
+  position: relative;
+
+  padding: 8px 12px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  color: #cbd5e1;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+
+  border: 1px solid transparent;
+}
+
+/* HOVER */
+nav a:hover {
+  color: #3b82f6;
+  transform: none;
+}
+
+/* Active/hover underline (animated) */
+nav a {
+  display: inline-block;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: -6px;
+  height: 2px;
+  background: #3b82f6;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 240ms cubic-bezier(.2,.8,.2,1);
+  border-radius: 2px;
+}
+
+nav a.active {
+  color: #3b82f6;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  transform: scaleX(1);
+}
+
+/* ===============================
+   MOBILE NAVBAR
+=============================== */
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  nav div:last-child {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+}
+/* ===============================
+   HERO
+=============================== */
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 80px 20px;
+
+  background-image: url('../bilder/bild_mit_bliz1.jpeg');
+  background-size: cover;
+  background-position: center;
+
+ 
+}
+
+.hero div {
+  animation: fadeUp 1s ease;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  margin-bottom: 12px;
+
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  opacity: 0.85;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   SECTIONS
+=============================== */
+
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+h3 {
+  color: #3b82f6;
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.92;
+}
+
+/* ===============================
+   GRID
+=============================== */
+
+.grid {
+  display: grid;
+  gap: 25px;
+}
+
+.grid.two {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.grid.cards {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* ===============================
+   CARDS (WOW EFFECT)
+=============================== */
+
+.card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+
+  padding: 22px;
+  border-radius: 18px;
+
+  border: 1px solid rgba(59, 130, 246, 0.12);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+}
+
+/* ===============================
+   IMAGES
+=============================== */
+
+img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  transition: 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* ===============================
+   PREMIUM BUTTON SYSTEM (WOW FIX)
+=============================== */
+
+.btn,
+button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 14px;
+
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+
+    color: #0b1220;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+
+  background-size: 200% 200%;
+
+  box-shadow:
+  0 10px 25px rgba(59, 130, 246, 0.25),
+  0 4px 10px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+/* ===============================
+   HOVER (FLOW + LIFT + GLOW)
+=============================== */
+
+.btn:hover,
+button:hover {
+  transform: translateY(-4px) scale(1.02);
+
+  background-position: right center;
+
+  box-shadow:
+    0 18px 40px rgba(59, 130, 246, 0.35),
+    0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ===============================
+   CLICK FEEDBACK (FEELS REAL)
+=============================== */
+
+.btn:active,
+button:active {
+  transform: translateY(0) scale(0.97);
+
+  box-shadow:
+    0 8px 18px rgba(59, 130, 246, 0.2);
+}
+
+/* ===============================
+   SHINE EFFECT (WOW MOMENT)
+=============================== */
+
+.btn::before,
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+}
+
+.btn:hover::before,
+button:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+/* ===============================
+   DISABLED STATE
+=============================== */
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ===============================
+   OPTIONAL: SECONDARY BUTTON STYLE
+=============================== */
+
+.btn.secondary {
+  background: rgba(30, 41, 59, 0.8);
+  color: #e2e8f0;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.btn.secondary:hover {
+  border-color: rgba(59,130,246,0.12);
+  background: rgba(30, 41, 59, 1);
+}
+
+/* ===============================
+   LISTS
+=============================== */
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   TABS
+=============================== */
+
+.tabs {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background: #1e293b;
+  color: #cbd5e1;
+
+  border: 1px solid rgba(56,189,248,0.15);
+
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn:hover {
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background: #3b82f6;
+  color: #0b1220;
+}
+
+/* ===============================
+   TAB CONTENT
+=============================== */
+
+.tab-content {
+  display: none;
+
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+
+  padding: 20px;
+  border-radius: 16px;
+
+  border: 1px solid rgba(59, 130, 246, 0.12);
+
+  animation: fadeTab 0.4s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeTab {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   FORMS (PRO LEVEL FIX)
+=============================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px 14px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+
+  background: rgba(15, 23, 42, 0.8);
+  color: #e2e8f0;
+
+  outline: none;
+
+  transition: 0.25s ease;
+}
+
+/* Hover */
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+/* Focus (WICHTIG = WOW MOMENT) */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: rgba(59,130,246,0.12);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(148, 163, 184, 0.6);
+}
+
+/* ===============================
+   CANVAS (CHART FIX)
+=============================== */
+
+canvas {
+  width: 100%;
+  max-width: 100%;
+
+  background: rgba(30, 41, 59, 0.7);
+  padding: 20px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ===============================
+   FILTER UI
+=============================== */
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+}
+
+.filter label {
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.filter select {
+  background: rgba(30, 41, 59, 0.8);
+  color: #e2e8f0;
+
+  border: 1px solid rgba(56,189,248,0.2);
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.filter select:hover {
+  border-color: rgba(59,130,246,0.12);
+}
+
+/* ===============================
+   GALLERY
+=============================== */
+
+.gallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+
+footer {
+  text-align: center;
+  padding: 25px;
+
+  background: #0b1220;
+
+  border-top: 1px solid rgba(56,189,248,0.08);
+
+  margin-top: 60px;
+
+  color: rgba(226,232,240,0.8);
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=============================== */
+
+@media (max-width: 900px) {
+  .grid.two {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 40px 15px;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ===============================
+   SMALL MICRO-ANIMATIONS
+=============================== */
+
+/* smooth reveal feel */
+.card,
+.tab-content,
+img {
+  will-change: transform;
+}
+
+/* hover glow upgrade */
+.card:hover {
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+/* ===============================
+   OPTIONAL WOW TOUCH (SUBTLE GLOW BACKGROUND)
+=============================== */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -200px;
+  left: -200px;
+  width: 500px;
+  height: 500px;
+
+  background: radial-gradient(circle, rgba(56,189,248,0.08), transparent 60%);
+  filter: blur(80px);
+
+  z-index: -1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wettkampf Analyse – Case Study</title>
+  <link rel="stylesheet" href="./styles/wettkampf-analyse.css">
+  <script src="./scripts/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div><strong>Portfolio</strong></div>
+      <div>
+        <a href="index.html">Start</a>
+        <a href="training.html">Training</a>
+        <a href="wettkampf-analyse.html" class="active">Wettkampf</a>
+        <a href="koerperhaltung.html">Körperhaltung</a>
+        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="schiesstechnik.html">Technik</a>
+        <a href="treffen.html">Treffer</a>
+        <a href="fokus-training.html">Fokus</a>
+        <a href="atmung.html">Atmung</a>
+        <a href="abzug_haltung.html">Abzug & Waffenhaltung</a>
+        <a href="verein.html">Verein</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>Wettkampf Analyse</h1>
+        <p>Case Study: Performance-Auswertung eines offiziellen Turniers</p>
+      </div>
+    </section>
+
+    <!-- PERFORMANCE DASHBOARD -->
+    <section>
+      <h2>Performance Übersicht</h2>
+
+      <div class="grid cards">
+
+        <div class="card">
+          <h3>🎯 Trefferquote</h3>
+          <p>87 % Durchschnitt</p>
+        </div>
+
+        <div class="card">
+          <h3>🏆 Wettkampfplatzierung</h3>
+          <p>Top 10 im Teilnehmerfeld</p>
+        </div>
+
+        <div class="card">
+          <h3>⚡ Konstanz</h3>
+          <p>Sehr stabile erste Serien</p>
+        </div>
+
+        <div class="card">
+          <h3>🧠 Mental</h3>
+          <p>Verbesserungspotenzial im Finale</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DIAGRAMM -->
+    <section>
+      <h2>Leistungsentwicklung</h2>
+
+      <canvas id="matchChart"></canvas>
+    </section>
+
+    <!-- TABS -->
+    <section>
+
+      <div class="tabs">
+
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="openTab('overview', event)">Übersicht</button>
+          <button class="tab-btn" onclick="openTab('analysis', event)">Analyse</button>
+          <button class="tab-btn" onclick="openTab('execution', event)">Optimierung</button>
+          <button class="tab-btn" onclick="openTab('result', event)">Ergebnis</button>
+        </div>
+
+        <!-- ÜBERSICHT -->
+
+        <div id="overview" class="tab-content active">
+
+          <h2>Projektübersicht</h2>
+
+          <p>
+            Ziel dieses Projekts war die vollständige Analyse eines offiziellen
+            Wettkampfs im Sportschießen. Dabei wurden technische, mentale und
+            taktische Faktoren ausgewertet, um Verbesserungspotenziale für
+            zukünftige Wettkämpfe zu identifizieren.
+          </p>
+
+          <img src="bilder/Leitsungsausweis.jpg" alt="Wettkampf">
+
+        </div>
+
+        <!-- ANALYSE -->
+
+        <div id="analysis" class="tab-content">
+
+          <h2>Analyse</h2>
+
+          <div class="grid two">
+
+            <div>
+
+              <h3>Beobachtungen</h3>
+
+              <ul>
+                <li>Sehr präziser Start in den Wettkampf</li>
+                <li>Konstante Schussbilder über mehrere Serien</li>
+                <li>Leichte Konzentrationsverluste im Finale</li>
+                <li>Stressbedingte Abweichungen unter Zeitdruck</li>
+
+              </ul>
+
+            </div>
+
+            <div>
+
+              <h3>Interpretation</h3>
+
+              <p>
+                Die technische Ausführung blieb über den Großteil des Wettkampfs
+                konstant. Unter erhöhter mentaler Belastung nahm jedoch die
+                Feinmotorik leicht ab, was sich unmittelbar auf die Präzision
+                auswirkte.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- OPTIMIERUNG -->
+
+        <div id="execution" class="tab-content">
+
+          <h2>Optimierungsstrategie</h2>
+
+          <div class="grid cards">
+
+            <div class="card">
+              <h3>🏋️ Drucktraining</h3>
+              <p>Simulation realistischer Wettkampfsituationen.</p>
+            </div>
+
+            <div class="card">
+              <h3>🧘 Atemtechnik</h3>
+              <p>Verbesserung der Schussroutine durch kontrollierte Atmung.</p>
+            </div>
+
+            <div class="card">
+              <h3>🎯 Technik</h3>
+              <p>Optimierung von Haltung, Abzug und Zielaufnahme.</p>
+            </div>
+
+            <div class="card">
+              <h3>🧠 Mentaltraining</h3>
+              <p>Steigerung der Konzentration unter Belastung.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ERGEBNIS -->
+
+        <div id="result" class="tab-content">
+
+          <h2>Ergebnis</h2>
+
+          <p>
+            Durch die Analyse konnten mehrere konkrete Verbesserungsmaßnahmen
+            identifiziert werden. Besonders die mentale Vorbereitung und die
+            Standardisierung der Schussroutine bieten großes Potenzial für
+            zukünftige Leistungssteigerungen.
+          </p>
+
+          <h3>Fazit</h3>
+
+          <p>
+            Die Wettkampf Analyse zeigt, dass bereits kleine Optimierungen in
+            Technik und Konzentration zu einer deutlich stabileren Gesamtleistung
+            führen können. Sie bildet die Grundlage für den weiteren
+            Trainingsplan und die Vorbereitung auf kommende Wettbewerbe.
+          </p>
+
+          <a class="btn" href="index.html#projects">
+            ← Zurück zu den Projekten
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Portfolio Sportschütze
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
