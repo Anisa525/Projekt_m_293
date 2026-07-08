@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Körperhaltung – Sportschießen</title>
-
+    <link rel="icon" href="icons/icon.ico">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3b82f6">
     <link rel="stylesheet" href="styles/koerperhaltung.css">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -16,8 +20,7 @@
         <nav>
             <div><strong>Portfolio</strong></div>
 
-            <div>
-                <a href="index.html">Start</a>
+            <div class='nav-menu' id='primary-navigation'><a href="index.html">Start</a>
                 <a href="training.html">Training</a>
                 <a href="wettkampf-analyse.html">Wettkampf</a>
                 <a href="koerperhaltung.html" class="active">Körperhaltung</a>
@@ -26,8 +29,17 @@
                 <a href="treffen.html">Treffer</a>
                 <a href="fokus-training.html">Fokus</a>
                 <a href="atmung.html">Atmung</a>
-                <a href="abzug_haltung.html">Abzug & Waffenhaltung</a>
+                <a href="abzug_haltung.html">Abzug</a>
                 <a href="verein.html">Verein</a>
+                <a href="merkliste.html">Merkliste</a>
+            </div>
+            <div class='nav-actions'><button class="theme-toggle" type="button" aria-label="Theme wechseln">🌙</button>
+                <button class='nav-toggle' type='button' aria-controls='primary-navigation' aria-expanded='false'
+                    aria-label='Navigation ein- oder ausklappen'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -36,11 +48,6 @@
     <section class="hero">
         <div>
             <h1>Stabilität beginnt im Körper</h1>
-            <p>
-                Die richtige Körperhaltung ist die Basis für Präzision, Kontrolle und konstante Ergebnisse im
-                Sportschießen.
-            </p>
-
             <br>
             <a href="#technik" class="btn">Technik ansehen</a>
         </div>
@@ -110,7 +117,7 @@
 
         <div class="grid two">
 
-            <img src="bilder/koerperhaltung.jpg" alt="Körperhaltung Sportschießen">
+            <img src="bilder/Körperhaltung.jpeg" alt="Körperhaltung Sportschießen">
 
             <div>
                 <h3>Perfekte Haltung</h3>
@@ -154,7 +161,7 @@
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 Portfolio – Körperhaltung & Sportschießen</p>
+        © 2026 Portfolio Sportschütze
     </footer>
 
 </body>

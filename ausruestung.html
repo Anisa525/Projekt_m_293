@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ausrüstung – Sportschütze</title>
-
+    <link rel="icon" href="icons/icon.ico">
     <link rel="stylesheet" href="styles/ausruestung.css">
+    <link rel="stylesheet" href="./styles/style1.css">
+  <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -16,8 +18,7 @@
         <nav>
             <div><strong>Portfolio</strong></div>
 
-            <div>
-                <a href="index.html">Start</a>
+            <div class='nav-menu' id='primary-navigation'><a href="index.html">Start</a>
                 <a href="training.html">Training</a>
                 <a href="wettkampf-analyse.html">Wettkampf</a>
                 <a href="koerperhaltung.html">Körperhaltung</a>
@@ -26,9 +27,17 @@
                 <a href="treffen.html">Treffer</a>
                 <a href="fokus-training.html">Fokus</a>
                 <a href="atmung.html">Atmung</a>
-                <a href="abzug_haltung.html">Abzug & Waffenhaltung</a>
+                <a href="abzug_haltung.html">Abzug</a>
                 <a href="verein.html">Verein</a>
-            </div>
+                <a href="merkliste.html">Merkliste</a>
+                </div>
+      <div class='nav-actions'><button class="theme-toggle" type="button" aria-label="Theme wechseln">🌙</button>
+        <button class='nav-toggle' type='button' aria-controls='primary-navigation' aria-expanded='false' aria-label='Navigation ein- oder ausklappen'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
         </nav>
     </header>
 
@@ -36,11 +45,6 @@
     <section class="hero">
         <div>
             <h1>Ausrüstung & Setup</h1>
-            <p>
-                Präzision beginnt nicht nur beim Schützen – sondern bei der richtigen Ausrüstung.
-                Jedes Detail zählt.
-            </p>
-
             <br>
             <a href="#equipment" class="btn">Equipment ansehen</a>
         </div>
@@ -53,23 +57,27 @@
         <div class="grid cards">
 
             <div class="card">
-                <h3>Luftpistole</h3>
-                <p>Hochpräzises Sportgerät für Wettkämpfe und Training.</p>
+                <h3>T-Shirt</h3>
+                <p>Hochwertiges T-Shirt für komfortable Tragekomfort</p>
+                <img src="bilder/IMG_6033.jpeg" alt="Sportschießen T-Shirt">
             </div>
 
             <div class="card">
-                <h3>Visierung</h3>
-                <p>Feinjustierte Kimme & Korn für maximale Genauigkeit.</p>
+                <h3>Hörhschutz</h3>
+                <p>Effektiver Hörhschutz für sicheres Training und Wettkämpfe.</p>
+                <img src="bilder/hörschutz.jpeg" alt="Hörschutz Sportschießen">
             </div>
 
             <div class="card">
-                <h3>Abzugssystem</h3>
-                <p>Weicher, kontrollierter Abzug für konstante Schüsse.</p>
+                <h3>Überzieher </h3>
+                <p>Schützt vor Verletzungen und verbessert den Halt.</p>
+                <img src="bilder/Image (5).jpg" alt="Überzieher Sportschießen">
             </div>
 
             <div class="card">
-                <h3>Griff</h3>
-                <p>Ergonomisch angepasst für perfekte Stabilität.</p>
+                <h3>Taschenmesser</h3>
+                <p>Praktisches Werkzeug für den Alltag und Wettkämpfe.</p>
+                <img src="bilder/Image6.jpg" alt="Taschenmesser Sportschießen">
             </div>
 
         </div>
@@ -104,12 +112,12 @@
 
         <div class="grid two">
 
-            <img src="bilder/ausruestung.jpg" alt="Sportschießen Ausrüstung">
+            <img src="bilder/IMG_6032.jpeg" alt="Sportschießen Ausrüstung">
 
             <div>
                 <h3>Komplettes Setup</h3>
                 <p>
-                    Jedes Element – von der Pistole bis zur Haltung – muss perfekt abgestimmt sein.
+                    Jedes Element – vom Sturmgewehr bis zur Haltung – muss perfekt abgestimmt sein.
                 </p>
 
                 <p>
@@ -124,7 +132,7 @@
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 Portfolio – Ausrüstung & Sportschießen</p>
+        © 2026 Portfolio Sportschütze
     </footer>
 
 </body>

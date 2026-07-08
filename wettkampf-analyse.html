@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wettkampf Analyse – Case Study</title>
+  <link rel="icon" href="icons/icon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3b82f6">
   <link rel="stylesheet" href="./styles/wettkampf-analyse.css">
-  <script src="./scripts/script.js" defer></script>
+  <link rel="stylesheet" href="./styles/style1.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -15,8 +19,7 @@
   <header>
     <nav>
       <div><strong>Portfolio</strong></div>
-      <div>
-        <a href="index.html">Start</a>
+      <div class='nav-menu' id='primary-navigation'><a href="index.html">Start</a>
         <a href="training.html">Training</a>
         <a href="wettkampf-analyse.html" class="active">Wettkampf</a>
         <a href="koerperhaltung.html">Körperhaltung</a>
@@ -25,8 +28,17 @@
         <a href="treffen.html">Treffer</a>
         <a href="fokus-training.html">Fokus</a>
         <a href="atmung.html">Atmung</a>
-        <a href="abzug_haltung.html">Abzug & Waffenhaltung</a>
+        <a href="abzug_haltung.html">Abzug</a>
         <a href="verein.html">Verein</a>
+        <a href="merkliste.html">Merkliste</a>
+      </div>
+      <div class='nav-actions'><button class="theme-toggle" type="button" aria-label="Theme wechseln">🌙</button>
+        <button class='nav-toggle' type='button' aria-controls='primary-navigation' aria-expanded='false'
+          aria-label='Navigation ein- oder ausklappen'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </nav>
   </header>
@@ -37,7 +49,6 @@
     <section class="hero">
       <div>
         <h1>Wettkampf Analyse</h1>
-        <p>Case Study: Performance-Auswertung eines offiziellen Turniers</p>
       </div>
     </section>
 
@@ -214,9 +225,6 @@
   <footer>
     © 2026 Portfolio Sportschütze
   </footer>
-
-  <script src="./scripts/script.js"></script>
-
 </body>
 
 </html>

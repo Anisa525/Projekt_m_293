@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merkliste</title>
+    <link rel="icon" href="icons/icon.ico">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3b82f6">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <script src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div><strong>Portfolio</strong></div>
+            <div class='nav-menu' id='primary-navigation'><a href="index.html">Start</a>
+                <a href="training.html">Training</a>
+                <a href="wettkampf-analyse.html">Wettkampf</a>
+                <a href="koerperhaltung.html">Körperhaltung</a>
+                <a href="ausruestung.html">Ausrüstung</a>
+                <a href="schiesstechnik.html">Technik</a>
+                <a href="treffen.html">Treffer</a>
+                <a href="fokus-training.html">Fokus</a>
+                <a href="atmung.html">Atmung</a>
+                <a href="abzug_haltung.html">Abzug</a>
+                <a href="verein.html">Verein</a>
+                <a href="merkliste.html" class="active">Merkliste</a>
+            </div>
+            <div class='nav-actions'>
+                <button class='theme-toggle' type='button' aria-label='Theme wechseln'>🌙</button>
+                <button class='nav-toggle' type='button' aria-controls='primary-navigation' aria-expanded='false'
+                    aria-label='Navigation ein- oder ausklappen'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Gemerkte Projekte</h2>
+            <div id="savedContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Portfolio Sportschütze
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('savedContainer');
+            if (window.loadSavedList) {
+                loadSavedList(container);
+            }
+        });
+    </script>
+
+</body>

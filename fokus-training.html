@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fokus-Training – Projekt</title>
+  <link rel="icon" href="icons/icon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3b82f6">
   <link rel="stylesheet" href="./styles/fokus-training.css">
+  <link rel="stylesheet" href="./styles/style1.css">
   <script src="./scripts/script.js" defer></script>
 </head>
 
@@ -14,8 +18,7 @@
   <header>
     <nav>
       <div><strong>Portfolio</strong></div>
-      <div>
-        <a href="index.html">Start</a>
+      <div class='nav-menu' id='primary-navigation'><a href="index.html">Start</a>
         <a href="training.html">Training</a>
         <a href="wettkampf-analyse.html">Wettkampf</a>
         <a href="koerperhaltung.html">Körperhaltung</a>
@@ -24,8 +27,17 @@
         <a href="treffen.html">Treffer</a>
         <a href="fokus-training.html" class="active">Fokus</a>
         <a href="atmung.html">Atmung</a>
-        <a href="abzug_haltung.html">Abzug & Waffenhaltung</a>
+        <a href="abzug_haltung.html">Abzug</a>
         <a href="verein.html">Verein</a>
+        <a href="merkliste.html">Merkliste</a>
+      </div>
+      <div class='nav-actions'><button class="theme-toggle" type="button" aria-label="Theme wechseln">🌙</button>
+        <button class='nav-toggle' type='button' aria-controls='primary-navigation' aria-expanded='false'
+          aria-label='Navigation ein- oder ausklappen'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </nav>
   </header>
@@ -35,7 +47,6 @@
     <section class="hero">
       <div>
         <h1>Fokus-Training</h1>
-        <p>Steigerung der Konzentration und mentalen Leistungsfähigkeit im Sportschießen</p>
       </div>
     </section>
 
@@ -43,7 +54,7 @@
       <div class="grid two">
 
         <div>
-          <img src="bilder/fokus-training.jpg" alt="Fokus Training">
+          <img src="bilder/traning3.jpg" alt="Fokus Training">
         </div>
 
         <div>
