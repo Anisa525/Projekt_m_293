@@ -19,18 +19,20 @@ body {
   line-height: 1.6;
   padding-top: 70px;
 }
+
 /* NAVBAR rules are centralized in styles/style1.css */
 
 /* MOBILE */
 @media (max-width: 900px) {
   /* navbar rules centralized in styles/style1.css */
 }
+
 /* ===============================
    HERO
 =============================== */
 
 .hero {
-    min-height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,6 +69,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -126,7 +129,7 @@ p {
   padding: 20px;
   border-radius: 16px;
 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
   transition: 0.3s;
   position: relative;
@@ -149,6 +152,7 @@ p {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -160,16 +164,16 @@ p {
 =============================== */
 
 footer {
-    text-align: center;
-    padding: 25px;
+  text-align: center;
+  padding: 25px;
 
-    background: #0a0f1c;
+  background: #0a0f1c;
 
-    border-top: 1px solid rgba(59, 130, 246, 0.2);
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
 
-    margin-top: 60px;
+  margin-top: 60px;
 
-    color: #94a3b8;
+  color: #94a3b8;
 }
 
 /* ===============================
@@ -180,6 +184,7 @@ footer {
   .grid.two {
     grid-template-columns: 1fr;
   }
+
   /* navbar rules centralized in styles/style1.css */
 
   .hero {

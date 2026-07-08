@@ -113,7 +113,7 @@ p {
   padding: 22px;
   border-radius: 18px;
 
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 
   transition: 0.3s ease;
 }
@@ -121,7 +121,7 @@ p {
 .card:hover {
   transform: translateY(-8px);
   border-color: var(--primary);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* ===============================
@@ -145,7 +145,7 @@ p {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(59,130,246,0.35);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
 }
 
 /* ===============================
@@ -184,7 +184,9 @@ p {
   background: #2d3748;
 }
 
-.tab-btn.active { /* moved to style1.css */ }
+.tab-btn.active {
+  /* moved to style1.css */
+}
 
 .tab-content {
   display: none;
@@ -206,6 +208,7 @@ p {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -217,4 +220,3 @@ p {
 /* ===============================
    HERO
 =============================== */
-

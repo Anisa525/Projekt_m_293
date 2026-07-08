@@ -21,8 +21,6 @@ body {
 }
 
 
-/* NAVBAR rules are centralized in styles/style1.css */
-
 /* ===============================
    HERO
 =============================== */
@@ -181,16 +179,16 @@ li {
 =============================== */
 
 footer {
-    text-align: center;
-    padding: 25px;
+  text-align: center;
+  padding: 25px;
 
-    background: #0a0f1c;
+  background: #0a0f1c;
 
-    border-top: 1px solid rgba(59, 130, 246, 0.2);
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
 
-    margin-top: 60px;
+  margin-top: 60px;
 
-    color: #94a3b8;
+  color: #94a3b8;
 }
 
 /* ===============================
@@ -201,6 +199,7 @@ footer {
   .grid.two {
     grid-template-columns: 1fr;
   }
+
   /* navbar rules centralized in styles/style1.css */
 
   .hero {
